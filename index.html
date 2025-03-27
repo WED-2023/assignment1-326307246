@@ -1,109 +1,68 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Varda's Personal Site</title>
 <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
-<div id="menu">
-<li><a href="#about">About Me</a></li>
-<li><a href="#photos">My Photos</a></li>
-<li><a href="#playlist">My Playlist</a></li>
-<li><a href="#like">Like</a></li>
-<li><a href="#qrcoder">QR code</a></li>
-<li><a href="#spa">Q&A</a></li>
-<li><a href="#contact">Contact Me</a></li>
-</div>
+  <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/he_IL/sdk.js#xfbml=1&version=v22.0"></script>
+
+    <header>
+        <h1>Varda's Personal Site</h1>
+        <nav>
+            <ul>
+              <li><a href="#about">About Me</a></li>
+              <li><a href="#photos">My Photos</a></li>
+              <li><a href="#playlist">My Playlist</a></li>
+              <li><a href="#like">Like</a></li>
+              <li><a href="#qrcoder">QR code</a></li>
+              <li><a href="#spa">Q&A</a></li>
+              <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
 		  
 <section id="about" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-about me
-<br/>
-<br/>
-<br/>
+  <h2>About Me</h2>
+  <p>Meet Varda - A super enthusiastic, creative hard-worker with a rich history and a life full of achievements.</br>
+      Varda was born in the 1950s and grew up in Jerusalem.</br>
+      From an early age, she showed immense dedication to her studies and passion for learning, excelling in various subjects.</br>    
+      She is known for her ability to build strong, lasting relationships and is deeply involved in her community and family life, constantly nurturing connections with friends, colleagues, and loved ones.</br>
+      In her free time, Varda enjoys a wide range of hobbies, including getting lectures on cultures around the globe, watching foreign movies, hiking in nature, and practicing Pillates, which keeps her mobile and strong so she can be fit to maintain her enormous garden.</br>
+      She's also an avid traveler, having explored many countries and cultures, each journey enriching her worldview.</br>
+      Her love for adventure is balanced by her creativity in arts.</br>
+      One of the most influential figures in Varda's life was her grandmother, a resilient and compassionate woman who taught her the value of hard work, empathy, and persistence.</br>
+      Inspired by these values, Varda continues to strive for personal growth and enrich the lives of those around her.</br>
+      As a pillar of her social and professional circles, Varda remains an inspiring role model, offering guidance and support to everyone in her network. Her life story is one of resilience, passion, and a constant drive to create meaningful connections and leave a positive impact on the world.</br></p>
 </section>
 
 <section id="photos" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my photos
-<br/>
-<br/>
-<br/>
+  <h2>My Photos</h2>
+  <div id="gallery">
+    <img src="atmovies.jpg" alt="Photo 1">
+    <img src="jerus.jpg" alt="Photo 2">
+    <img src="pic1.jpg" alt="Photo 3">
+  </div>
 </section>
 
 <section id="playlist" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my playlist
-<br/>
-<br/>
-<br/>
+  <h2>My Playlist</h2>
+  <iframe width="1200" height="679" src="https://www.youtube.com/embed/IxX_QHay02M" frameborder="0" allowfullscreen></iframe>
 </section>
 
 <section id="like" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-give me a like
-<br/>
-<br/>
-<br/>
+  <h2>Like</h2>
+  <div class="fb-like" 
+      data-href="http://127.0.0.1:5500/SeniorPersonalSite.html#like" 
+      data-width="100" 
+      data-layout="button_count" 
+      data-action="like" 
+      data-size="large" 
+      data-share="true">
+  </div>
 </section>
 
 <section id="qrcoder" class="section">
@@ -130,50 +89,72 @@ scan my code
 </section>
 
 <section id="spa" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-ans
-<br/>
-<br/>
-<br/>
+  <h2>Q&A</h2>
+    
+  <div class="accordion">
+      <div class="accordion-item">
+          <button id="accordion-button-1" aria-expanded="false">
+              <span class="accordion-title">1. פרטו שלושה הבדלים עיקריים בין web1, web2 ו web3</span>
+              <span class="icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion-content">
+              <p><strong>Web1:</strong> בעיקר סטטי, אתרים הציגו מידע ללא אינטראקציה משמעותית של משתמשים. התקשורת הייתה חד כיוונית (קוראים).</p>
+              <p><strong>Web2:</strong> יותר אינטראקטיבי, משתמשים יכולים ליצור תוכן בעצמם (לייקים, תגובות, מדיה חברתית), תקשורת דו-כיוונית (קוראים כותבים).</p>
+              <p><strong>Web3:</strong> מבוסס על טכנולוגיות מבוזרות כמו בלוקצ'יין, מאפשר בעלות על תוכן דיגיטלי, פרוטוקולי קריפטו, חוויות פרטיות ובעלות על נתונים (המשתמשים שולטים במידע).</p>
+          </div>
+      </div>
+      <div class="accordion-item">
+          <button id="accordion-button-2" aria-expanded="false">
+              <span class="accordion-title">2. הסבירו את ההבדלים שצוינו בשאלה 1 על ידי דוגמה של תרחיש שימוש – חיפוש השאילתה "תופעות לוואי של תרופות" יראה בצורה מסוימת ב- web1 ובצורה אחרת ב- web3.</span>
+              <span class="icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion-content">
+              <p><strong>Web1:</strong> חיפוש זה ב-web1 היה מחזיר תוצאה סטטית: מידע מבוסס על דפים שנכתבו על ידי מומחים/מוסדות. המשתמש לא יכול היה להגיב או לתרום מידע נוסף.</p>
+              <p><strong>Web2:</strong> חיפוש זה ב-web2 מציג תוצאות מאתרי תוכן אינטראקטיביים כמו ויקיפדיה, בלוגים, פורומים, ותוצאות מגוגל שמאפשרות תגובות גולשים (כגון ביקורות).</p>
+              <p><strong>Web3:</strong> ב-web3 החיפוש יהיה מבוזר: המידע יגיע ממקורות ברשתות מבוזרות (כגון בלוקצ'יין) ויהיה ניתן לאמת את המקור שלו. המשתמשים יוכלו להשתתף בתהליך אימות המידע ולהרוויח מזה.</p>
+          </div>
+      </div>
+  </div>
+</section>
+<script>
+  const accordions = document.querySelectorAll(".accordion button");
+
+  accordions.forEach((accordion) => {
+      accordion.addEventListener("click", function() {
+          const isExpanded = accordion.getAttribute("aria-expanded") === "true";
+          accordions.forEach(button => button.setAttribute("aria-expanded", "false"));
+          if (!isExpanded) {
+              accordion.setAttribute("aria-expanded", "true");
+          }
+      });
+  });
+</script>
+<section id="contact" class="section">
+  <h2>Contact Me</h2>
+  <form>
+      <label for="name">שם:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">אימייל:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="message">הודעה:</label>
+      <textarea id="message" name="message" required></textarea>
+      
+      <label for="emoji">בחר חייכן:</label>
+      <select id="emoji" name="emoji">
+          <option value=":)">🙂</option>
+          <option value=":(">🙁</option>
+          <option value=":D">😀</option>
+      </select>
+      
+      <button type="submit">שלח</button>
+  </form>
 </section>
 
-<section id="contact" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-contact me
-<br/>
-<br/>
-<br/>
-</section>
+<footer>
+  <p>&copy; 2025 Varda's Personal Site</p>
+</footer>
 
 
 <script type="text/javascript">
