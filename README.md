@@ -1,1 +1,6 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/89IMDEJr)
+ID - 326307246
+Site io - https://wed-2023.github.io/assignment1-326307246/
+
+About:
+This site is about my grandmother, called Varda. 
+It details about her life story, hobbies, qualities as well as some pics and a song.
